@@ -30,9 +30,6 @@ func GetDBConnection() (*gorm.DB, error) {
 		"postgres",
 		fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", config.DBHost, config.DBPort, config.DBUser, config.DBPassword, config.DBName),
 	)
-	// db.DB().SetMaxIdleConns(5)
-	// db.DB().SetMaxOpenConns(10)
-	// db.DB().SetConnMaxLifetime(time.Minute * 5)
 	if err != nil {
 		return nil, err
 	}

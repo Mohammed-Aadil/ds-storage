@@ -2,6 +2,23 @@
 
 
 [[projects]]
+  branch = "master"
+  digest = "1:88935a552a7743cecfa38f9e9059ace6e155f24d46c33937deacf5e6a464f204"
+  name = "github.com/Mohammed-Aadil/ds-storage"
+  packages = [
+    "api/handlers",
+    "api/models",
+    "api/services",
+    "config",
+    "init",
+    "init/routers",
+    "pkg/errors",
+    "pkg/utils",
+  ]
+  pruneopts = "UT"
+  revision = "ab33816a91aed2e2bb88b85a9ef0c64f14265e79"
+
+[[projects]]
   digest = "1:582b704bebaa06b48c29b0cec224a6058a09c86883aaddabde889cd1a5f73e1b"
   name = "github.com/google/uuid"
   packages = ["."]
@@ -61,6 +78,14 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/Mohammed-Aadil/ds-storage/api/handlers",
+    "github.com/Mohammed-Aadil/ds-storage/api/models",
+    "github.com/Mohammed-Aadil/ds-storage/api/services",
+    "github.com/Mohammed-Aadil/ds-storage/config",
+    "github.com/Mohammed-Aadil/ds-storage/init",
+    "github.com/Mohammed-Aadil/ds-storage/init/routers",
+    "github.com/Mohammed-Aadil/ds-storage/pkg/errors",
+    "github.com/Mohammed-Aadil/ds-storage/pkg/utils",
     "github.com/google/uuid",
     "github.com/gorilla/handlers",
     "github.com/gorilla/mux",
